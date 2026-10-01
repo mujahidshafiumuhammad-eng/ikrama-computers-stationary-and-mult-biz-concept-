@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IKRAMA COMPUTER STATIONARY AND MULT BIZ CONCEPT - Graphics Design, Photocopy, Lamination, NIN, BVN, CAC, Business Cards da sauran ayyuka.">
+  <title>IKRAMA COMPUTER STATIONARY AND MULT BIZ CONCEPT</title>
+  <style>
+    :root{
+      --primary:#0b5ed7;
+      --primary-dark:#063b8f;
+      --accent:#f7b500;
+      --dark:#102033;
+      --muted:#64748b;
+      --light:#f5f8fc;
+      --white:#fff;
+      --border:#e5eaf1;
+      --shadow:0 12px 35px rgba(15,40,80,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--dark);color:#fff;font-size:14px;padding:9px 0}
+    .topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800}
+    .logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;display:grid;place-items:center;font-weight:900;box-shadow:0 8px 20px rgba(11,94,215,.25)}
+    .brand-text{font-size:15px;line-height:1.15;max-width:255px}
+    .brand-text span{color:var(--primary)}
+    nav{display:flex;align-items:center;gap:22px}
+    nav a{font-weight:700;font-size:14px;color:#334155}
+    nav a:hover{color:var(--primary)}
+    .nav-cta{background:var(--primary);color:#fff!important;padding:10px 15px;border-radius:10px}
+    .menu{display:none;border:0;background:var(--light);font-size:25px;padding:8px 12px;border-radius:10px}
+    .hero{background:
+      radial-gradient(circle at 90% 10%,rgba(247,181,0,.22),transparent 28%),
+      radial-gradient(circle at 5% 80%,rgba(11,94,215,.16),transparent 30%),
+      linear-gradient(135deg,#f7fbff 0%,#fff 55%,#f7fbff 100%);
+      padding:78px 0 65px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#eaf2ff;color:var(--primary-dark);padding:8px 13px;border-radius:999px;font-weight:800;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(36px,5vw,61px);line-height:1.05;letter-spacing:-1.8px;margin-bottom:20px}
+    h1 span{color:var(--primary)}
+    .hero p{font-size:18px;color:#526176;max-width:650px;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:12px;font-weight:800;border:2px solid transparent;transition:.2s}
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 22px rgba(11,94,215,.2)}
+    .btn-primary:hover{transform:translateY(-2px);background:var(--primary-dark)}
+    .btn-outline{border-color:#d8e1ed;background:#fff;color:var(--dark)}
+    .btn-outline:hover{border-color:var(--primary);color:var(--primary)}
+    .hero-card{background:#fff;border:1px solid var(--border);border-radius:26px;padding:28px;box-shadow:var(--shadow);position:relative}
+    .hero-card:before{content:"";position:absolute;inset:-10px -10px auto auto;width:80px;height:80px;background:var(--accent);opacity:.15;border-radius:50%}
+    .hero-card h3{font-size:22px;margin-bottom:15px}
+    .quick-list{display:grid;gap:12px}
+    .quick-item{display:flex;gap:12px;align-items:center;padding:12px;background:var(--light);border-radius:13px}
+    .quick-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:#e6f0ff}
+    .quick-item b{display:block;font-size:14px}
+    .quick-item small{color:var(--muted)}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 40px}
+    .eyebrow{color:var(--primary);font-weight:900;text-transform:uppercase;letter-spacing:1.2px;font-size:12px;margin-bottom:8px}
+    .section-head h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+    .section-head p{color:var(--muted)}
+    .services{background:var(--light)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:0 5px 20px rgba(15,40,80,.04);transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .icon{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:#eaf2ff;font-size:24px;margin-bottom:16px}
+    .card h3{font-size:18px;margin-bottom:7px}
+    .card p{color:var(--muted);font-size:14px}
+    .products .card{display:flex;align-items:flex-start;gap:15px;padding:18px}
+    .products .icon{flex:0 0 48px;margin:0}
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+    .about-box{background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:25px;padding:35px;color:#fff;min-height:330px;display:flex;flex-direction:column;justify-content:center}
+    .about-box .logo{background:#fff;color:var(--primary);margin-bottom:20px}
+    .about-box h3{font-size:28px;margin-bottom:12px}
+    .about-text h2{font-size:38px;line-height:1.15;margin-bottom:15px}
+    .about-text p{color:var(--muted);margin-bottom:18px}
+    .ticks{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .tick{font-weight:700;font-size:14px}
+    .tick:before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e7f7ed;color:#159447;margin-right:8px}
+    .contact{background:var(--light)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+    .contact-row{display:flex;gap:14px;align-items:flex-start;margin:18px 0}
+    .contact-row .icon{margin:0;flex:0 0 48px}
+    .contact-row h4{margin-bottom:2px}
+    .contact-row p{color:var(--muted);font-size:14px}
+    .cta{background:linear-gradient(135deg,var(--dark),#173d68);color:#fff;border-radius:28px;padding:40px;display:flex;justify-content:space-between;gap:25px;align-items:center}
+    .cta p{color:#c8d5e5;margin-top:6px}
+    .cta .btn{background:#25d366;color:#fff}
+    footer{background:#081521;color:#b8c5d4;padding:28px 0}
+    footer .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    footer strong{color:#fff}
+    .float-wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:26px;box-shadow:0 12px 25px rgba(0,0,0,.18);z-index:60}
+    @media(max-width:850px){
+      nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:15px 4%;flex-direction:column;align-items:stretch}
+      nav.open{display:flex}
+      nav a{padding:11px 0}
+      .menu{display:block}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .hero{padding-top:55px}
+    }
+    @media(max-width:560px){
+      #orderForm > div:first-child{grid-template-columns:1fr!important}
+      .topbar .container{justify-content:center;text-align:center}
+      .brand-text{font-size:12px;max-width:190px}
+      .logo{width:43px;height:43px}
+      .grid{grid-template-columns:1fr}
+      .ticks{grid-template-columns:1fr}
+      section{padding:60px 0}
+      .cta{padding:28px 22px;display:block}
+      .cta .btn{margin-top:20px;width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>📍 Kafin Maiyaki, Unguwar Rimi</span>
+      <span>📞 08033722625 &nbsp; | &nbsp; 08037833597</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <div class="logo">IK</div>
+        <div class="brand-text">IKRAMA <span>COMPUTER</span><br>STATIONARY & MULT BIZ CONCEPT</div>
+      </a>
+      <button class="menu" aria-label="Bude menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="#home">Gida</a>
+        <a href="#services">Ayyuka</a>
+        <a href="#products">Kayayyaki</a>
+        <a href="#about">Game da Mu</a>
+        <a href="#contact">Tuntuɓe Mu</a>
+        <a href="#order">Yi Oda</a>
+        <a class="nav-cta" href="https://wa.me/2348037833597" target="_blank">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">✨ Ayyuka masu sauri da inganci</div>
+          <h1>Komai na <span>Computer & Stationery</span> a wuri guda.</h1>
+          <p>Muna samar da graphics design, photocopy, lamination, posters, banners, business cards, CAC, NIN, BVN da sauran ayyukan kasuwanci cikin sauƙi da inganci.</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="https://wa.me/2348037833597" target="_blank">💬 Tuntube mu a WhatsApp</a>
+            <a class="btn btn-outline" href="#services">Duba Ayyukanmu ↓</a>
+            <a class="btn btn-outline" href="#order">📝 Yi Oda</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Me za mu iya yi maka?</h3>
+          <div class="quick-list">
+            <div class="quick-item"><div class="quick-icon">🎨</div><div><b>Graphics Design</b><small>Logo, poster, banner & cards</small></div></div>
+            <div class="quick-item"><div class="quick-icon">🖨️</div><div><b>Printing & Photocopy</b><small>Takardu da sauran printing</small></div></div>
+            <div class="quick-item"><div class="quick-icon">📄</div><div><b>NIN / BVN / CAC</b><small>Ayyukan rijista da takardu</small></div></div>
+            <div class="quick-item"><div class="quick-icon">🎒</div><div><b>Stationery</b><small>Notebooks, pens, pencils & bags</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Ayyukanmu</div>
+          <h2>Ayyuka da muke bayarwa</h2>
+          <p>Muna taimaka wa ɗalibai, 'yan kasuwa, ma'aikata da al'umma da ayyukan computer da stationery.</p>
+        </div>
+        <div class="grid">
+          <div class="card"><div class="icon">🎨</div><h3>Graphics Design</h3><p>Design na posters, banners, flyers, logos da sauran abubuwan talla.</p></div>
+          <div class="card"><div class="icon">🖨️</div><h3>Photocopy</h3><p>Photocopy na takardu cikin tsari da inganci.</p></div>
+          <div class="card"><div class="icon">📑</div><h3>Lamination</h3><p>Kare takardu, certificates da cards ta hanyar lamination.</p></div>
+          <div class="card"><div class="icon">🪧</div><h3>Posters & Banners</h3><p>Design da shirya posters da banners na kasuwanci da bukukuwa.</p></div>
+          <div class="card"><div class="icon">💳</div><h3>Business Cards</h3><p>Business cards masu kyau domin tallata kasuwancinka.</p></div>
+          <div class="card"><div class="icon">📜</div><h3>CAC Certificates</h3><p>Taimako wajen ayyukan da suka shafi CAC da takardun kasuwanci.</p></div>
+          <div class="card"><div class="icon">🪪</div><h3>NIN & BVN</h3><p>Ayyukan da suka shafi NIN da BVN bisa ga abin da ake buƙata.</p></div>
+          <div class="card"><div class="icon">🏦</div><h3>Microfinance Account</h3><p>Taimako wajen buɗe asusun microfinance.</p></div>
+          <div class="card"><div class="icon">💻</div><h3>Computer Services</h3><p>Ayyukan computer da sauran taimakon fasaha na yau da kullum.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Stationery</div>
+          <h2>Kayayyakin da muke da su</h2>
+          <p>Abubuwan makaranta da ofis da za ka iya samu a wajenmu.</p>
+        </div>
+        <div class="grid">
+          <div class="card"><div class="icon">🎒</div><div><h3>School Bags</h3><p>Jakunkunan makaranta.</p></div></div>
+          <div class="card"><div class="icon">📓</div><div><h3>Notebooks</h3><p>Littattafan rubutu.</p></div></div>
+          <div class="card"><div class="icon">🖊️</div><div><h3>Pens</h3><p>Alƙaluman rubutu iri-iri.</p></div></div>
+          <div class="card"><div class="icon">✏️</div><div><h3>Pencils</h3><p>Fensir da kayan rubutu.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-box">
+          <div class="logo">IK</div>
+          <h3>IKRAMA COMPUTER</h3>
+          <p>STATIONARY AND MULT BIZ CONCEPT</p>
+        </div>
+        <div class="about-text">
+          <div class="eyebrow">Game da Mu</div>
+          <h2>Wuri ɗaya domin ayyukan computer da stationery.</h2>
+          <p>IKRAMA COMPUTER STATIONARY AND MULT BIZ CONCEPT na taimaka wa jama'a da ayyukan graphics, printing, takardu, registration da kayan stationery.</p>
+          <div class="ticks">
+            <div class="tick">Sabis cikin sauri</div>
+            <div class="tick">Ayyuka masu inganci</div>
+            <div class="tick">Sauƙin tuntuɓa</div>
+            <div class="tick">Ayyuka iri-iri</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Tuntuɓe Mu</div>
+          <h2>Ka zo ko ka kira mu</h2>
+          <p>Muna shirye mu karɓi tambayarka ko oda.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-row"><div class="icon">📍</div><div><h4>Adireshi</h4><p>Kafin Maiyaki, Unguwar Rimi, opposite Alhaji Musa Talatu Residence.</p></div></div>
+            <div class="contact-row"><div class="icon">📞</div><div><h4>Wayoyi</h4><p><a href="tel:08033722625">08033722625</a><br><a href="tel:08037833597">08037833597</a></p></div></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-row"><div class="icon">💬</div><div><h4>WhatsApp</h4><p>08037833597</p></div></div>
+            <a class="btn btn-primary" style="width:100%;margin-top:5px" href="https://wa.me/2348037833597" target="_blank">Aika saƙo a WhatsApp</a>
+            <a class="btn btn-outline" style="width:100%;margin-top:10px" href="tel:08033722625">📞 Kira yanzu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact" id="order">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Oda / Tambaya</div>
+          <h2>Aika mana da oda kai tsaye</h2>
+          <p>Cika bayanan da ke ƙasa, sannan za a buɗe WhatsApp da saƙonka a shirye.</p>
+        </div>
+        <div class="contact-card" style="max-width:760px;margin:auto">
+          <form id="orderForm">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div>
+                <label for="customerName" style="display:block;font-weight:700;margin-bottom:6px">Sunanka</label>
+                <input id="customerName" required placeholder="Misali: Abdullahi" style="width:100%;padding:13px;border:1px solid #dbe3ee;border-radius:10px;font-size:15px">
+              </div>
+              <div>
+                <label for="service" style="display:block;font-weight:700;margin-bottom:6px">Aikin da kake so</label>
+                <select id="service" required style="width:100%;padding:13px;border:1px solid #dbe3ee;border-radius:10px;font-size:15px;background:#fff">
+                  <option value="">Zaɓi aiki</option>
+                  <option>Graphics Design</option>
+                  <option>Photocopy</option>
+                  <option>Lamination</option>
+                  <option>Poster / Banner</option>
+                  <option>Business Card</option>
+                  <option>CAC</option>
+                  <option>NIN / BVN</option>
+                  <option>Microfinance Account</option>
+                  <option>Stationery</option>
+                  <option>Computer Service</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-top:14px">
+              <label for="details" style="display:block;font-weight:700;margin-bottom:6px">Bayani</label>
+              <textarea id="details" rows="5" placeholder="Rubuta abin da kake buƙata..." style="width:100%;padding:13px;border:1px solid #dbe3ee;border-radius:10px;font-size:15px;resize:vertical"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%;margin-top:16px">💬 Aika oda ta WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;background:var(--light)">
+      <div class="container">
+        <div class="cta">
+          <div><h2>Shirya mu yi maka aiki?</h2><p>Aika mana da saƙo a WhatsApp domin tambaya ko oda.</p></div>
+          <a class="btn" href="https://wa.me/2348037833597" target="_blank">💬 Fara WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> <strong>IKRAMA COMPUTER STATIONARY AND MULT BIZ CONCEPT</strong></div>
+      <div>Kafin Maiyaki, Unguwar Rimi</div>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/2348037833597" target="_blank" aria-label="WhatsApp">☏</a>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll("nav a").forEach(a => a.addEventListener("click", () => document.querySelector("nav").classList.remove("open")));
+
+    document.getElementById("orderForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("customerName").value.trim();
+      const service = document.getElementById("service").value;
+      const details = document.getElementById("details").value.trim();
+      const message = `Assalamu alaikum, sunana ${name}. Ina son ${service}.${details ? ` Bayani: ${details}` : ""}`;
+      window.open("https://wa.me/2348037833597?text=" + encodeURIComponent(message), "_blank");
+    });
+
+  </script>
+</body>
+</html>
